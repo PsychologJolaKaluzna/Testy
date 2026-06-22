@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista testów - Psycholog Jola Kałużna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        lavenderLight: '#F5F2FA',
+                        lavenderMedium: '#9E8ECB',
+                        lavenderDark: '#4D3E7F',
+                        pinkLight: '#FDF3F6',
+                        pinkMedium: '#E2A9BE',
+                        pinkDark: '#7F3D58',
+                        yellowLight: '#FFFDF0',
+                        yellowMedium: '#EAD36B',
+                        yellowDark: '#756116',
+                        greenLight: '#EEF6F1',
+                        greenMedium: '#87C59E',
+                        greenDark: '#2C573C',
+                        basePlum: '#282030',
+                        bgCream: '#FDFBF7'
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-[#F3EFF8] text-basePlum font-sans antialiased selection:bg-lavenderMedium selection:text-white min-h-screen flex flex-col">
+
+    <header class="sticky top-0 z-50 bg-[#4D3E7F] text-[#FDFBF7] py-5 px-6 shadow-md border-b border-lavenderMedium/30">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <span class="p-2.5 bg-[#9E8ECB] rounded-full text-[#FDFBF7] shadow-sm">
+                    <i data-lucide="flower" class="w-6 h-6"></i>
+                </span>
+                <div>
+                    <h1 class="font-serif text-xl font-bold tracking-wide">Centrum Testów</h1>
+                    <p class="text-xs text-lavenderLight/80">Psycholog Jola Kałużna</p>
+                </div>
+            </div>
+            <div class="hidden sm:block">
+                <span class="text-sm font-medium text-lavenderLight/80">Wybierz swój test</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 md:px-6 py-10 md:py-16 max-w-7xl">
+        
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
+
+            <a href="test-glowny.html" class="bg-white rounded-[2rem] p-8 flex flex-col items-center text-center border border-lavenderMedium/20 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 group relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-1.5 bg-lavenderMedium"></div>
+                <div class="p-4 bg-[#9E8ECB] text-white rounded-full mb-5 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                    <i data-lucide="flower" class="w-8 h-8"></i>
+                </div>
+                <h3 class="font-serif text-xl font-bold text-basePlum mb-3">Metoda 5F</h3>
+                <p class="text-sm text-neutral-500 flex-grow mb-6 leading-relaxed">Poznaj swoje rany działania w ciele. Zobacz, gdzie dokładnie zatrzymujesz się w procesie.</p>
+                <div class="w-full pt-4 border-t border-neutral-100 flex items-center justify-between">
+                    <span class="text-xs uppercase tracking-widest text-lavenderDark font-bold">Metoda 5F</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 text-lavenderMedium group-hover:translate-x-1 transition-transform"></i>
+                </div>
+            </a>
+
+            </div>
+    </main>
+
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
